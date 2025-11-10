@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 08:32:02 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/10 08:35:43 by stmaire          ###   ########lyon.fr   */
+/*   Created: 2025/11/10 09:04:48 by stmaire           #+#    #+#             */
+/*   Updated: 2025/11/10 09:11:56 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+int	ft_isascii(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	if (c >= 0 && c <= 127)
 		return (1);
 	else
 		return (0);
@@ -25,15 +25,14 @@ int main(int argc, char **argv)
     char    c;
     (void)argc;
     c = argv[1][0];
-    printf("ft_isalpha\n");
-    if (ft_isalpha(c) == 1)
-        printf("%d est un caractère alphabétique.\n", c);
+    printf("ft_isascii\n");
+    if (ft_isascii(c) == 1)
+        printf("%d est un caractère de la table ascii.\n", c);
     else
-        printf("%d n'est pas un caractère alphabétique.\n", c);
-    printf("isalpha\n");
-    if (ft_isalpha(c) == 1)
-        printf("%d est un caractère alphabétique.\n", c);
+        printf("%d n'est pas un caractère de la table ascii\n", c);
+    printf("isascii\n");
+    if (ft_isascii(c) == 1)
+        printf("%d est un caractère de la table ascii.\n", c);
     else
-        printf("%d n'est pas un caractère alphabétique.\n", c);    
-}
-*/
+        printf("%d n'est pas un caractère de la table ascii.\n", c);    
+}*/
