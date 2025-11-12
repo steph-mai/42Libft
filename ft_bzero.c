@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:41:54 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/10 13:56:17 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/12 08:51:00 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,16 @@ void	ft_bzero(void *s, size_t n)
 }
 
 /*#include <stdio.h>
+#include <bsd/string.h>
 
 int 	main(void)
 {
 	char	s1[] = "stephanie";
-	char	s2[] = "hello";
+	char	s2[] = "stephanie";
 
-	printf("%s\n%s\n", s1, s2);
+	printf("s = %s\n", s1);
 	ft_bzero(s1, 4);
-	ft_bzero(s2, 5);
-	printf("%s\n%s\n", s1, s2);
+	printf("ft_bzero : %s\n", s1);
+	bzero(s2, 4);
+	printf("bzero : %s\n", s2);
 }*/	

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 18:05:20 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/12 08:56:23 by stmaire          ###   ########lyon.fr   */
+/*   Created: 2025/11/12 10:17:51 by stmaire           #+#    #+#             */
+/*   Updated: 2025/11/12 10:40:42 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return (len_src);
 }
 
-/*#include <bsd/string.h> //compil with -lbsd
+/*#include <bsd/string.h> 
 #include <stdio.h>
+#include <string.h>
 
 int	main(void)
 {

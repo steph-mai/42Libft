@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 08:32:02 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/10 13:37:25 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/12 09:11:43 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ int main(int argc, char **argv)
     (void)argc;
     c = argv[1][0];
     printf("ft_isalpha\n");
-    if (ft_isalpha(c) == 1)
-        printf("%d est un caractère alphabétique.\n", c);
+    if (ft_isalpha(c) == 0)
+        printf("%d n'est un caractère alphabétique.\n", c);
     else
-        printf("%d n'est pas un caractère alphabétique.\n", c);
+        printf("%d est pas un caractère alphabétique.\n", c);
     printf("isalpha\n");
-    if (isalpha(c) == 1)
-        printf("%d est un caractère alphabétique.\n", c);
+    if (isalpha(c) == 0)
+        printf("%d n'est un caractère alphabétique.\n", c);
     else
-        printf("%d n'est pas un caractère alphabétique.\n", c);    
+        printf("%d est pas un caractère alphabétique.\n", c);    
 }*/
