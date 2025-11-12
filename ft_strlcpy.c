@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,20 +6,15 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 18:05:20 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/10 18:08:35 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/12 08:56:23 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	strlcpy(char *dst, const char *src, size_t size)
-{
-
-}
-=======
 #include "libft.h"
 
-size_t ft_strlcpy(char *dest,const char *src, size_t size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	size_t len_src;
+	size_t	len_src;
 	size_t	i;
 
 	i = 0;
@@ -32,12 +26,11 @@ size_t ft_strlcpy(char *dest,const char *src, size_t size)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] ='\0';
+	dest[i] = '\0';
 	return (len_src);
 }
 
-
-#include <bsd/string.h> //compil with -lbsd
+/*#include <bsd/string.h> //compil with -lbsd
 #include <stdio.h>
 
 int	main(void)
@@ -46,10 +39,10 @@ int	main(void)
 	char	src1[] = "hello";
 	char	dest2[12];
 	char	src2[] = "hello";
+
 	printf("return  strlcpy = %zu\n", strlcpy(dest1, src1, 12));
 	printf("dest = %s\n", dest1);
 	printf("return  ft_strlcpy = %zu\n", ft_strlcpy(dest2, src2, 12));
 	printf("dest = %s\n", dest2);
 	return (0);
-} 
->>>>>>> c1a1434ebba7c4f3f7458a74e06a458626f535a9
+}*/
