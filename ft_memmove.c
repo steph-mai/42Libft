@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:13:58 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/10 17:47:22 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/12 17:06:49 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*s1;
 	unsigned char	*s2;
-	size_t			i;
 
 	s1 = (unsigned char *)src;
 	s2 = (unsigned char *)dest;
@@ -34,8 +33,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <string.h>
+
+/*#include <string.h>
 #include <stdio.h>
 
 int		main(void)
