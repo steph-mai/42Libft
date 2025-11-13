@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:42:23 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/12 16:15:19 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 09:35:13 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -24,7 +24,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	len_dest = ft_strlen(dest);
 	if (size <= len_dest)
 		return (len_src + size);
-	while (i < len_dest)
+	while (i < len_dest && str[j])
 		i++;
 	while (i < size -1)
 	{
