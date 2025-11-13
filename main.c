@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 09:01:14 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/12 17:24:33 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 10:03:53 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -169,4 +169,14 @@ int	main(int argc, char **argv)
 	printf("avec tolower, result = %d\n", result_tolower);
 	result_ft_tolower = ft_tolower(c);
 	printf("avec ft_tolower, result = %d\n", result_ft_tolower);
+//ft_strchr
+	char	str_strchr[] = "Stéphanie";
+	char	c = '\0';
+	printf("avec ft_strchr, return = %p\n", ft_strchr(str_strchr, c));
+	printf("avec strchr, return = %p\n", strchr(str_strchr, c));
+//ft_strrchr
+	char	str_strrchr[] = "ananas";
+	char	c = '\0';
+	printf("avec ft_strrchr, return = %p\n", ft_strrchr(str_strrchr, c));
+	printf("avec strrchr, return = %p\n", strrchr(str_strrchr, c));
 }
