@@ -6,7 +6,7 @@
 #    By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/07 09:13:20 by stmaire           #+#    #+#              #
-#    Updated: 2025/11/13 13:04:46 by stmaire          ###   ########lyon.fr    #
+#    Updated: 2025/11/13 13:43:35 by stmaire          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ OBJ = $(patsubst %.c,%.o, $(SRCS))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rcs $(OBJ) $(NAME)
+	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c $< -o $@

@@ -6,11 +6,11 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 09:01:14 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/13 11:26:19 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 12:28:01 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*#include "libft.h"
 #include "stdio.h"
 #include <ctype.h>
 #include <string.h>
@@ -186,4 +186,4 @@ int	main(int argc, char **argv)
 	int		result_ft_strncmp = ft_strncmp(s1_strncmp, s2_strncmp, 4);
 	printf("avec strncmp, result = %d\n", result_strncmp);
 	printf("avec ft_strncmp, result = %d\n", result_ft_strncmp);
-}
+}*/

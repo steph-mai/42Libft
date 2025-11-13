@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:13:58 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/13 09:38:38 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 12:35:21 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,19 +33,19 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*#include <string.h>
+/*
+#include <string.h>
 #include <stdio.h>
 
 int		main(void)
 {
-	char	str1[10] = "stephanie";
-	char	str2[10] = "stephanie";
+	char	str1[10] = "Stephanie";
+	char	str2[10] = "Stephanie";
 
 	printf("str1 = %s\n", str1);
-	memmove(str1 + 2, str1, 7);
+	memmove(str1 + 1, str1, 5);
 	printf("memmove : new string = %s\n", str1);
-	ft_memmove(str2 + 2, str2, 7);
+	ft_memmove(str2 + 1, str2, 5);
     printf("ft_memmove : new string = %s\n", str2);
 	return (0);
 }*/
