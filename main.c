@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 09:01:14 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/13 10:03:53 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 11:26:19 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -179,4 +179,11 @@ int	main(int argc, char **argv)
 	char	c = '\0';
 	printf("avec ft_strrchr, return = %p\n", ft_strrchr(str_strrchr, c));
 	printf("avec strrchr, return = %p\n", strrchr(str_strrchr, c));
+//ft_strncmp
+	char	s1_strncmp[] = "Stephanie";
+	char	s2_strncmp[] = "hello";
+	int		result_strncmp = strncmp(s1_strncmp, s2_strncmp, 4);
+	int		result_ft_strncmp = ft_strncmp(s1_strncmp, s2_strncmp, 4);
+	printf("avec strncmp, result = %d\n", result_strncmp);
+	printf("avec ft_strncmp, result = %d\n", result_ft_strncmp);
 }
