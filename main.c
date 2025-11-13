@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 09:01:14 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/12 10:28:40 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/12 17:24:33 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,30 +22,25 @@ int	main(int argc, char **argv)
     (void)argc;
     c = argv[1][0];
 //ft_isalpha   
- 	printf("ft_isalpha\n");
     if (ft_isalpha(c) == 0)
         printf("%d n'est pas un caractère alphabétique.\n", c);
     else
         printf("%d est un caractère alphabétique.\n", c);
-    	printf("isalpha\n");
     if (isalpha(c) == 0)
         printf("%d n'est pas un caractère alphabétique.\n", c);
     else
-        printf("%d est un caractère alphabétique.\n", c);    
+        printf("%d est un caractère alphabétique.\n\n", c);    
 //ft_isdigit    
-	printf("ft_isdigit\n");
     if (ft_isdigit(c) == 0)
         printf("%d n'est pas un chiffre.\n", c);
     else
         printf("%d est un chiffre.\n", c);
-    printf("isdigit\n");
     if (isdigit(c) == 0)
         printf("%d n'est pas un chiffre.\n", c);
     else
-        printf("%d est un chiffre.\n", c);    
+        printf("%d est un chiffre.\n\n", c);    
 //ft_isalnum
-	 printf("ft_isalnum\n");
-    if (ft_isalnum(c) == 0)
+	 if (ft_isalnum(c) == 0)
         printf("%d n'est pas un caractère alphanumérique.\n", c);
     else
         printf("%d est un caractère alphanumérique>\n", c);
@@ -53,9 +48,8 @@ int	main(int argc, char **argv)
     if (isalnum(c) == 0)
         printf("%d n'est pas un caractère alphanumérique.\n", c);
     else
-        printf("%d est un caractère alphanumérique.\n", c);    
+        printf("%d est un caractère alphanumérique.\n\n", c);    
 //ft_isascii
-	printf("ft_isascii\n");
     if (ft_isascii(c) == 0)
         printf("%d n'est pas un caractère de la table ascii.\n", c);
     else
@@ -64,9 +58,8 @@ int	main(int argc, char **argv)
     if (isascii(c) == 0)
         printf("%d n'est pas un caractère de la table ascii.\n", c);
     else
-        printf("%d est un caractère de la table ascii.\n", c);
+        printf("%d est un caractère de la table ascii.\n\n", c);
 //ft_isprint
-	printf("ft_isprint\n");
     if (ft_isprint(c) == 0)
         printf("%d n'est pas un caractère printable.\n", c);
     else
@@ -75,15 +68,15 @@ int	main(int argc, char **argv)
     if (isprint(c) == 0)
         printf("%d n'est pas un caractère printable.\n", c);
     else
-        printf("%d est un caractère printable.\n", c);
-//ft_strlen
- 	char    str[] = "stephanie";
+        printf("%d est un caractère printable.\n\n", c);
+://ft_strlen
+ 	char    str1[10] = "stephanie";
     size_t  len;
 
     printf("ft_strlen\n");
-    printf("la longueur de la chaîne est de %zu\n", len = ft_strlen(str));
+    printf("la longueur de la chaîne est de %zu\n", len = ft_strlen(str1));
     printf("strlen\n");
-    printf("la longueur de la chaîne est de %zu\n", len = strlen(str));
+    printf("la longueur de la chaîne est de %zu\n", len = strlen(str1));
 //ft_memset
 	char    s1[100];
     char    s2[100];
@@ -142,4 +135,38 @@ int	main(int argc, char **argv)
     printf("dest = %s\n", dest1);
     printf("return  ft_strlcpy = %zu\n", ft_strlcpy(dest2, src2, 12));
     printf("dest = %s\n", dest2);
+//ft_strlcat
+	char    src3[7] = " hello";
+    char    src4[7] = " hello";
+    char    dest7[20] = "Stephanie";
+    char    dest8[20] = "Stephanie";
+    size_t  result1;
+    size_t  result2;
+
+    result1 = strlcat(dest7, src3, 22);
+    printf("result strlcat = %zu\n", result1);
+    printf("dest = %s\n", dest7);
+    result2 = ft_strlcat(dest8, src4, 22);
+    printf("result ft_strlcat = %zu\n", result2);
+    printf("dest = %s\n", dest8);
+//ft_toupper
+	int		result_toupper;
+	int		result_ft_toupper;
+
+	c = 's';
+	printf("Le caractère est : %c\n", c);
+	result_toupper = toupper(c);
+	printf("avec toupper, result = %d\n", result_toupper);
+	result_ft_toupper = ft_toupper(c);
+	printf("avec mon toupper, result = %d\n", result_toupper);
+//ft_tolower
+	int		result_tolower;
+	int		result_ft_tolower;
+
+	c = 'i';
+	printf("Le caractère est : %c\n", c);
+	result_tolower = tolower(c);
+	printf("avec tolower, result = %d\n", result_tolower);
+	result_ft_tolower = ft_tolower(c);
+	printf("avec ft_tolower, result = %d\n", result_ft_tolower);
 }

@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:13:58 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/12 17:06:49 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/13 09:38:38 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 int		main(void)
 {
 	char	str1[10] = "stephanie";
-	char	str2[12] = "stephanie";
+	char	str2[10] = "stephanie";
 
 	printf("str1 = %s\n", str1);
 	memmove(str1 + 2, str1, 7);
