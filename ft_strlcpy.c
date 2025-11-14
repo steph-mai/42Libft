@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:17:51 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/12 10:40:42 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/14 09:10:11 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	size_t	len_src;
 	size_t	i;
 
+	if (src == NULL)
+		return (0);
 	i = 0;
 	len_src = ft_strlen(src);
-	if (size == 0)
+	if (dest == NULL || size == 0)
 		return (len_src);
 	while (src[i] && i < size - 1)
 	{
