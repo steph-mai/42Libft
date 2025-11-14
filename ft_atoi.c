@@ -6,12 +6,9 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 15:27:49 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/14 16:10:57 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/14 16:15:47 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
-#include <stdio.h>
 
 int	ft_atoi(const char *nptr)
 {
@@ -40,7 +37,9 @@ int	ft_atoi(const char *nptr)
 	return (result);
 }
 
-/*int	main(void)
+/*#include <stdlib.h>
+#include <stdio.h>
+int	main(void)
 {
 	char str[] = "     -128";
 	int	result = atoi(str);
