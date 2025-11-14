@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 09:31:17 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/14 09:11:42 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/14 09:25:58 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ size_t	ft_strlen(const char *s)
 {
 	int	i;
 
-	if (s == NULL)
-		return (0);
 	i = 0;
 	while (s[i])
 		i++;
@@ -29,7 +27,7 @@ size_t	ft_strlen(const char *s)
 
 int	main(void)
 {
-	char	str[] = "stephanie";
+	char	*str = NULL;
 	size_t	len;
 
 	printf("ft_strlen\n");
