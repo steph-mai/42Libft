@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 08:29:05 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/17 10:53:54 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 14:20:09 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,16 @@ char	*ft_dupword(const char *s, char c, int *i)
 	return (dup);
 }
 
+void	ft_free_memory(char	**array, int j)
+{
+	while (array[j])
+	{
+		free(array[j]);
+		j++;
+	}
+	free(array);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**words_array;
@@ -76,8 +86,12 @@ char	**ft_split(char const *s, char c)
 		if (!s[i])
 			break ;
 		if (s[i] != c && s[i] != '\0')
+		{
 			words_array[j] = ft_dupword(s, c, &i);
-		j++;
+			if (!words_array[j])
+				return (ft_free_memory(words_array, j), NULL);
+			j++;
+		}
 	}
 	words_array[j] = NULL;
 	return (words_array);
