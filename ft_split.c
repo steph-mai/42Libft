@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 08:29:05 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/18 14:20:09 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 15:39:37 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_countwords(char const *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		if (s[i] != c && s[i] != '\0')
+		if (s[i] != '\0')
 		{
 			count++;
 			while (s[i] && s[i] != c)
@@ -37,18 +37,18 @@ int	ft_countwords(char const *s, char c)
 
 char	*ft_dupword(const char *s, char c, int *i)
 {
-	int		len;
+	int		index;
 	char	*dup;
 	int		j;
 
 	j = 0;
-	len = *i;
-	while (s[len] && s[len] != c)
-		len++;
-	dup = malloc(sizeof(char) * ((len - *i) + 1));
+	index = *i;
+	while (s[index] && s[index] != c)
+		index++;
+	dup = malloc(sizeof(char) * ((index - *i) + 1));
 	if (dup == NULL)
 		return (NULL);
-	while (*i < len)
+	while (*i < index)
 	{
 		dup[j] = s[*i];
 		(*i)++;
@@ -60,10 +60,13 @@ char	*ft_dupword(const char *s, char c, int *i)
 
 void	ft_free_memory(char	**array, int j)
 {
-	while (array[j])
+	int	k;
+
+	k = 0;
+	while (k < j)
 	{
-		free(array[j]);
-		j++;
+		free(array[k]);
+		k++;
 	}
 	free(array);
 }
@@ -76,7 +79,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	words_array = malloc(sizeof(char const *) * (ft_countwords(s, c) + 1));
+	words_array = malloc(sizeof(char *) * (ft_countwords(s, c) + 1));
 	if (words_array == NULL)
 		return (NULL);
 	while (s[i])
@@ -112,5 +115,12 @@ int	main(void)
 		printf("%s\n", array[i]);
 		i++;
 	}	
+	i = 0;
+	while (array[i])
+	{
+		free(array[i]);
+		i++;
+	}
+	free(array);	
 	return(0);
 }*/
