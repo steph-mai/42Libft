@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 15:27:49 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/14 16:15:47 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 10:42:31 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_check_overflow(long result, int digit, int negative)
 {
 	if (result > LONG_MAX / 10)
-	{	
+	{
 		if (negative == 1)
 			return (0);
 		return (-1);
@@ -31,10 +31,10 @@ int	ft_check_overflow(long result, int digit, int negative)
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	long result;
-	int	negative;
-	int	check;
+	int		i;
+	long	result;
+	int		negative;
+	int		check;
 
 	i = 0;
 	result = 0;
@@ -43,7 +43,7 @@ int	ft_atoi(const char *nptr)
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 		negative = (nptr[i++] == '-');
-	while (nptr[i] >= '0' && nptr[i] <= '9') 
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
 		check = ft_check_overflow(result, nptr[i] - '0', negative);
 		if (check != 1)
@@ -53,15 +53,15 @@ int	ft_atoi(const char *nptr)
 	if (negative == 1)
 		return (-result);
 	return (result);
-} 
+}
 
 /*#include <stdlib.h>
 #include <stdio.h>
 int	main(void)
 {
-	char str[] = "     -128";
+	char str[] = "     -12825486548454";
 	long	result = atoi(str);
-	printf("atoi : result = %d\n", result);
-	int result_ft = ft_atoi(str);
-	printf("ft_atoi : result = %d\n", result_ft);
+	printf("atoi : result = %ld\n", result);
+	long	 result_ft = ft_atoi(str);
+	printf("ft_atoi : result = %ld\n", result_ft);
 }*/

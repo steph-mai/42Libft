@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 08:39:08 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/18 17:33:42 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 10:37:22 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,13 @@
 # include <stdlib.h>
 # include <stdint.h>
 # include <unistd.h>
+# include <limits.h>
 
 typedef struct s_list
 {
-	void 			*content;
-	struct s_list 	*next;
-} 				t_list;
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
