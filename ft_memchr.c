@@ -6,10 +6,11 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 12:41:41 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/14 10:01:38 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:06:20 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

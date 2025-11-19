@@ -6,9 +6,10 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 10:26:41 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/12 16:14:37 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:07:40 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)

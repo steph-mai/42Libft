@@ -6,13 +6,13 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 08:29:05 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/18 15:39:37 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:09:33 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_countwords(char const *s, char c)
+static int	ft_countwords(char const *s, char c)
 {
 	int	count;
 	int	i;
@@ -35,7 +35,7 @@ int	ft_countwords(char const *s, char c)
 	return (count);
 }
 
-char	*ft_dupword(const char *s, char c, int *i)
+static char	*ft_dupword(const char *s, char c, int *i)
 {
 	int		index;
 	char	*dup;
@@ -58,7 +58,7 @@ char	*ft_dupword(const char *s, char c, int *i)
 	return (dup);
 }
 
-void	ft_free_memory(char	**array, int j)
+static void	ft_free_memory(char	**array, int j)
 {
 	int	k;
 
@@ -108,7 +108,6 @@ int	main(void)
 	const char	s[] = "stephanie hello bonjour";
 	char	c = ' ';
 	int		i = 0;
-
 	array = ft_split(s, c);
 	while (array[i])
 	{

@@ -6,13 +6,13 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 09:56:33 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/18 12:29:23 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:29:32 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_lennumber(int n)
+static	size_t	ft_lennumber(int n)
 {
 	size_t	len;
 

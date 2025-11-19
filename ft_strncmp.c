@@ -6,11 +6,11 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 10:05:29 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/14 09:14:42 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:12:05 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

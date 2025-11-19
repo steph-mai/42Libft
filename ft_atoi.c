@@ -6,13 +6,13 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 15:27:49 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/19 10:42:31 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:01:22 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_check_overflow(long result, int digit, int negative)
+static int	ft_check_overflow(long result, int digit, int negative)
 {
 	if (result > LONG_MAX / 10)
 	{

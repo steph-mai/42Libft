@@ -6,13 +6,13 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 14:21:36 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/17 16:28:27 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:18:56 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_is_set(char c, char const *set)
+static int	ft_is_set(char c, char const *set)
 {
 	size_t	i;
 
@@ -26,7 +26,7 @@ int	ft_is_set(char c, char const *set)
 	return (0);
 }
 
-size_t	ft_count_start_set(char const *s, char const *set)
+static size_t	ft_count_start_set(char const *s, char const *set)
 {
 	size_t	count_start;
 	size_t	i;
@@ -41,7 +41,7 @@ size_t	ft_count_start_set(char const *s, char const *set)
 	return (count_start);
 }
 
-size_t	ft_count_end_set(char const *s, char const *set)
+static size_t	ft_count_end_set(char const *s, char const *set)
 {
 	size_t	count_end;
 	size_t	len;

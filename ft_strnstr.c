@@ -6,11 +6,10 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 11:23:26 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/14 15:26:12 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:12:30 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)

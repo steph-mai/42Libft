@@ -6,11 +6,9 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 12:10:45 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/19 13:00:07 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:05:35 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_lstsize(t_list *lst)
 {
