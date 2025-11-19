@@ -6,11 +6,13 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 13:12:17 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/19 17:05:00 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:35:49 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-t_list *ft_lstlast(t_list *lst)
+#include "libft.h"
+
+t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
 		return (NULL);
