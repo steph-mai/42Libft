@@ -21,11 +21,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	if (*lst == NULL)
 	{
 		*lst = new;
-		new->next == NULL;
 		return;
 	}
 	last_node = ft_lstlast(*lst);
-	l
-		last_node->next = new;
-		new->next = NULL;
+	last_node->next = new;
 }
