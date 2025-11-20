@@ -63,6 +63,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	count_start;
 	size_t	count_end;
 
+	if (!s1 || !set)
+		return (NULL);
 	len = ft_strlen(s1);
 	count_start = ft_count_start_set(s1, set);
 	count_end = ft_count_end_set(s1, set);
