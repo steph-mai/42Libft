@@ -6,7 +6,7 @@
 #    By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/07 09:13:20 by stmaire           #+#    #+#              #
-#    Updated: 2025/11/19 17:41:43 by stmaire          ###   ########lyon.fr    #
+#    Updated: 2025/11/20 11:32:03 by stmaire          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ BONUS_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_b
 HEADERS = libft.h
 OBJ = $(patsubst %.c,%.o, $(SRCS))
 BONUS_OBJ = $(patsubst %.c,%.o, $(BONUS_SRCS))
+BONUS_FLAG = .bonus_done
 
 .PHONY: all
 all: $(NAME)
@@ -28,13 +29,15 @@ $(NAME): $(OBJ)
 %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-.PHONY: bonus
-bonus: $(OBJ) $(BONUS_OBJ)
-	ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
+bonus: $(BONUS_FLAG)
+
+$(BONUS_FLAG): $(BONUS_OBJ)
+	ar rcs $(NAME) $(BONUS_OBJ)
+	touch $(BONUS_FLAG)
 
 .PHONY: clean
 clean:
-	rm -f $(OBJ) $(BONUS_OBJ)
+	rm -f $(OBJ) $(BONUS_OBJ) $(BONUS_FLAG)
 
 .PHONY: fclean
 fclean: clean

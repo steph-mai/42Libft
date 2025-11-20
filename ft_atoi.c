@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 15:27:49 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/19 17:01:22 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/20 11:36:09 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_atoi(const char *nptr)
 	int		i;
 	long	result;
 	int		negative;
-	
+
 	i = 0;
 	result = 0;
 	negative = 0;

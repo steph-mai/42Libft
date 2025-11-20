@@ -6,9 +6,11 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 17:26:38 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/13 16:50:15 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/20 10:49:48 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

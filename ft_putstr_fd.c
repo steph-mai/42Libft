@@ -6,7 +6,7 @@
 /*   By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 17:08:01 by stmaire           #+#    #+#             */
-/*   Updated: 2025/11/17 17:15:26 by stmaire          ###   ########lyon.fr   */
+/*   Updated: 2025/11/20 11:41:10 by stmaire          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
-	
 	if (!s)
 		return ;
 	i = 0;
