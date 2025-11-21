@@ -6,7 +6,7 @@
 #    By: stmaire <stmaire@student.42lyon.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/07 09:13:20 by stmaire           #+#    #+#              #
-#    Updated: 2025/11/20 14:41:48 by stmaire          ###   ########lyon.fr    #
+#    Updated: 2025/11/21 15:35:08 by stmaire          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ $(NAME): $(OBJ)
 
 bonus: $(BONUS_FLAG)
 
-$(BONUS_FLAG): $(BONUS_OBJ)
+$(BONUS_FLAG): $(BONUS_OBJ) $(NAME)
 	ar rcs $(NAME) $(BONUS_OBJ)
 	touch $(BONUS_FLAG)
 
